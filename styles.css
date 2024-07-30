@@ -8,23 +8,19 @@ html {
 }
 body {
   background: #eee;
-  padding: 0 16px;
+  padding: 0 0;
   background-color: #545454;
 background-image: url("https://www.transparenttextures.com/patterns/robots.png");
 }
 
 header {
   background-color: #f5ba13;
-  margin: auto -16px;
+  margin: auto auto;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    background-color: lightblue;
-  }
-}
+
 
 header h1 {
   color: #fff;
@@ -51,6 +47,13 @@ footer p {
   width: 240px;
   margin: 16px;
   float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  
+  
+  
 }
 .note h1 {
   font-size: 1.1em;
@@ -84,6 +87,9 @@ form.create-note {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+
+
+
 form.create-note input,
 form.create-note textarea {
   width: 100%;
@@ -107,4 +113,31 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    
+    height: 80px;
+    
+  }
+  form.create-note{
+    width: 90vw;
+    margin: 30px 20px 20px 20px;
+    
+  }
+  .note {
+    width: 90vw;
+    margin: 16px 1.5vw 16px 1.5vw;
+    width: 47vw;
+    
+  }
+  .note h1 {
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    border-radius: 7px
+  }
 }
